@@ -389,7 +389,7 @@ horse_parse() ->
 
 -spec boundary() -> binary().
 boundary() ->
-	base64:encode(crypto:rand_bytes(48)).
+	base64:encode(crypto:strong_rand_bytes(48)).
 
 %% @doc Return the first part's head.
 %%
